@@ -100,4 +100,24 @@ header.hero-img .hero-text .text-two {
   color: white;
   text-align: center;
   border: 2px solid white;
+}
+
+.offers .card {
+  -webkit-box-shadow: 0px 0px 10px -5px rgb(66, 68, 90);
+  box-shadow: 0px 0px 10px -5px rgb(66, 68, 90);
+}
+.offers .card li {
+  list-style-type: none;
+}
+.offers .card .btn {
+  font-size: 0.8rem;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: gray;
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px -5px rgb(66, 68, 90);
+  box-shadow: 0px 0px 10px -5px rgb(66, 68, 90);
+}
+.offers .card .btn-second {
+  background-color: rgb(165, 242, 155);
 }/*# sourceMappingURL=style.css.map */
