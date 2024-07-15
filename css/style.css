@@ -6,12 +6,18 @@
 }
 
 body {
+  font-size: 60.75%;
   font-family: "Montserrat", sans-serif;
-  background-color: gray;
+  background-color: rgb(238, 241, 242);
 }
 
 .shadow-bg {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-title {
+  text-align: center;
+  padding: 20px;
 }
 
 header.hero-img {
@@ -48,7 +54,50 @@ header.hero-img .hero-text {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 30vh;
+  font-size: 1rem;
 }
 header.hero-img .hero-text .text-two {
   color: rgb(87, 174, 228);
+}
+
+.about-us-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about-us-content .about-us-text {
+  font-size: 0.8rem;
+}
+.about-us-content .about-us-img {
+  position: relative;
+  height: 30vh;
+  background-image: url(../img/waters_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-us-header {
+  position: relative;
+  margin-top: 20px;
+  background-image: url(../img/girl-_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+}
+.about-us-header .about-us-header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60vw;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  border: 2px solid white;
 }/*# sourceMappingURL=style.css.map */
