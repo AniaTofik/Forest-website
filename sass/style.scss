@@ -111,18 +111,18 @@ header.hero-img {
 .offers {
   .card-title {
     padding: 0.8rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .card-price {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .offers-title-text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .offers-cards ul li {
     list-style-type: none;
     font-size: 0.9rem;
-    padding: 0.2rem;
+    padding: 0.3rem;
   }
   .btn {
     font-size: 1.2rem;
@@ -144,21 +144,22 @@ header.hero-img {
 footer {
   background-color: rgb(232, 244, 239);
   .footer-heading {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .footer-about-us-text {
     .footer-text-title {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
     }
     .footer-text {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      padding: 0.1rem;
     }
   }
 
   .footer-text {
     font-size: 1rem;
-    padding: 1rem;
+    padding: 0.4rem;
   }
 }
 
@@ -170,6 +171,9 @@ footer {
     .navbar-collapse .navbar-nav a {
       display: block;
       font-size: 1.4rem;
+    }
+    .navbar-toggler-icon {
+      font-size: 1.8rem;
     }
   }
 
@@ -209,28 +213,69 @@ footer {
       font-size: 1.4rem;
     }
   }
+}
+@media (min-width: 768px) {
+  .navbar {
+    .navbar-brand {
+      font-size: 2.4rem;
+    }
+    .navbar-collapse .navbar-nav a {
+      font-size: 1.6rem;
+    }
+  }
 
-  // .offers {
-  //   .card-title {
-  //     padding: 1rem;
-  //     font-size: 2rem;
-  //   }
-  //   p.card-price {
-  //     font-size: 2rem;
-  //   }
-  //   .offers-title-text p {
-  //     font-size: 1rem;
-  //   }
-  //   .offers-cards ul li {
-  //     font-size: 1rem;
-  //     padding: 0.3rem;
-  //   }
-  // }
+  header.hero-img {
+    .hero-text {
+      .text-one {
+        font-size: 1.6rem;
+      }
+      .text-two {
+        font-size: 1.8rem;
+      }
+    }
+  }
 
-  footer {
-    margin: 1.5rem;
-    .footer-heading {
+  .about-us-content {
+    padding: 1rem;
+    .about-us-text {
+      .title {
+        font-size: 1.6rem;
+      }
+      .text {
+        font-size: 1.2rem;
+      }
+    }
+    .about-us-img {
+      padding: 2rem;
+      height: 25vh;
+    }
+  }
+
+  .about-us-header {
+    margin-top: 2rem;
+    height: 25vh;
+    .about-us-header-text {
+      font-size: 1.6rem;
+    }
+  }
+
+  .offers {
+    .card-title {
+      padding: 0.8rem;
       font-size: 2rem;
+    }
+    .card-price {
+      font-size: 2rem;
+    }
+    .offers-title-text p {
+      font-size: 1.2rem;
+    }
+    .offers-cards ul li {
+      font-size: 1rem;
+    }
+    .btn {
+      font-size: 1.4rem;
+      margin-top: 0.5rem;
     }
   }
 }
