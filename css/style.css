@@ -20,6 +20,10 @@ body {
   padding: 20px;
 }
 
+.navbar-nav .nav-link {
+  font-size: 1rem;
+}
+
 header.hero-img {
   position: relative;
   height: 30vh;
@@ -54,10 +58,14 @@ header.hero-img .hero-text {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 30vh;
-  font-size: 1rem;
+  color: rgb(238, 241, 242);
+}
+header.hero-img .hero-text .text-one {
+  font-size: 0.9rem;
 }
 header.hero-img .hero-text .text-two {
-  color: rgb(87, 174, 228);
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .about-us-content {
@@ -68,8 +76,11 @@ header.hero-img .hero-text .text-two {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.about-us-content .about-us-text {
-  font-size: 0.8rem;
+.about-us-content .about-us-text .title {
+  font-size: 1.5rem;
+}
+.about-us-content .about-us-text .text {
+  font-size: 1rem;
 }
 .about-us-content .about-us-img {
   position: relative;
@@ -95,29 +106,103 @@ header.hero-img .hero-text .text-two {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 60vw;
+  width: 70vw;
   padding: 10px 20px;
+  font-size: 1rem;
   color: white;
   text-align: center;
   border: 2px solid white;
 }
 
-.offers .card {
-  -webkit-box-shadow: 0px 0px 10px -5px rgb(66, 68, 90);
-  box-shadow: 0px 0px 10px -5px rgb(66, 68, 90);
+.offers .card-title {
+  padding: 0.8rem;
+  font-size: 2rem;
 }
-.offers .card li {
+.offers .card-price {
+  font-size: 2rem;
+}
+.offers .offers-title-text p {
+  font-size: 1rem;
+}
+.offers .offers-cards ul li {
   list-style-type: none;
+  font-size: 0.9rem;
+  padding: 0.2rem;
 }
-.offers .card .btn {
-  font-size: 0.8rem;
-  padding: 8px 16px;
+.offers .btn {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
   background-color: transparent;
   color: gray;
   border: none;
   -webkit-box-shadow: 0px 0px 10px -5px rgb(66, 68, 90);
   box-shadow: 0px 0px 10px -5px rgb(66, 68, 90);
 }
-.offers .card .btn-second {
+.offers .btn-second {
   background-color: rgb(165, 242, 155);
+}
+
+footer {
+  background-color: rgb(232, 244, 239);
+}
+footer .footer-heading {
+  font-size: 2rem;
+}
+footer .footer-about-us-text .footer-text-title {
+  font-size: 1.6rem;
+}
+footer .footer-about-us-text .footer-text {
+  font-size: 1.2rem;
+}
+footer .footer-text {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+@media (min-width: 576px) {
+  .navbar .navbar-brand {
+    font-size: 2rem;
+  }
+  .navbar .navbar-collapse .navbar-nav a {
+    display: block;
+    font-size: 1.4rem;
+  }
+  header.hero-img .hero-text .text-one {
+    font-size: 1.2rem;
+  }
+  header.hero-img .hero-text .text-two {
+    font-size: 1.4rem;
+  }
+  .about-us-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-us-content .about-us-text .title {
+    font-size: 1.5rem;
+  }
+  .about-us-content .about-us-text .text {
+    font-size: 1rem;
+  }
+  .about-us-content .about-us-img {
+    height: 20vh;
+  }
+  .about-us-header {
+    margin-top: 1.5rem;
+    height: 20vh;
+  }
+  .about-us-header .about-us-header-text {
+    width: 60vw;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+  }
+  footer {
+    margin: 1.5rem;
+  }
+  footer .footer-heading {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

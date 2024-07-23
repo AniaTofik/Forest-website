@@ -19,6 +19,14 @@ body {
   padding: 20px;
 }
 
+// nav
+.navbar-nav {
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+// header
 header.hero-img {
   position: relative;
   height: 30vh;
@@ -45,25 +53,31 @@ header.hero-img {
     align-items: start;
     flex-direction: column;
     height: 30vh;
-    font-size: 1rem;
-
+    color: rgb(238, 241, 242);
+    .text-one {
+      font-size: 0.9rem;
+    }
     .text-two {
-      color: rgb(87, 174, 228);
+      font-size: 1rem;
+      font-weight: bold;
     }
   }
 }
-
+// about-us
 .about-us-content {
   display: flex;
   justify-content: center;
   .about-us-text {
-    // width: 50%;
-    font-size: 0.8rem;
+    .title {
+      font-size: 1.5rem;
+    }
+    .text {
+      font-size: 1rem;
+    }
   }
   .about-us-img {
     position: relative;
     height: 30vh;
-    // width: 50%;
     background-image: url(../img/waters_640.jpg);
     background-size: cover;
     background-position: center;
@@ -84,35 +98,139 @@ header.hero-img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60vw;
+    width: 70vw;
     padding: 10px 20px;
-    // padding: 15px 30px;
+    font-size: 1rem;
     color: white;
     text-align: center;
     border: 2px solid white;
   }
 }
+// offers
 
 .offers {
-  .card {
+  .card-title {
+    padding: 0.8rem;
+    font-size: 2rem;
+  }
+  .card-price {
+    font-size: 2rem;
+  }
+  .offers-title-text p {
+    font-size: 1rem;
+  }
+  .offers-cards ul li {
+    list-style-type: none;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    // padding: 1rem 3rem;
+    background-color: transparent;
+    color: gray;
+    border: none;
     -webkit-box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
     box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
-    li {
-      list-style-type: none;
+  }
+  .btn-second {
+    background-color: rgb(165, 242, 155);
+  }
+}
+
+// footer-heading-about-us
+footer {
+  background-color: rgb(232, 244, 239);
+  .footer-heading {
+    font-size: 2rem;
+  }
+
+  .footer-about-us-text {
+    .footer-text-title {
+      font-size: 1.6rem;
     }
-    .btn {
-      font-size: 0.8rem;
-      padding: 8px 16px;
-      background-color: transparent;
-      color: gray;
-      border: none;
-      -webkit-box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
-      -moz-box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
-      box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
+    .footer-text {
+      font-size: 1.2rem;
     }
-    .btn-second {
-      background-color: rgb(165, 242, 155);
+  }
+
+  .footer-text {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar {
+    .navbar-brand {
+      font-size: 2rem;
+    }
+    .navbar-collapse .navbar-nav a {
+      display: block;
+      font-size: 1.4rem;
+    }
+  }
+
+  header.hero-img {
+    .hero-text {
+      .text-one {
+        font-size: 1.2rem;
+      }
+      .text-two {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .about-us-content {
+    display: flex;
+    justify-content: center;
+    .about-us-text {
+      .title {
+        font-size: 1.5rem;
+      }
+      .text {
+        font-size: 1rem;
+      }
+    }
+    .about-us-img {
+      height: 20vh;
+    }
+  }
+
+  .about-us-header {
+    margin-top: 1.5rem;
+    height: 20vh;
+    .about-us-header-text {
+      width: 60vw;
+      padding: 10px 20px;
+      font-size: 1.4rem;
+    }
+  }
+
+  // .offers {
+  //   .card-title {
+  //     padding: 1rem;
+  //     font-size: 2rem;
+  //   }
+  //   p.card-price {
+  //     font-size: 2rem;
+  //   }
+  //   .offers-title-text p {
+  //     font-size: 1rem;
+  //   }
+  //   .offers-cards ul li {
+  //     font-size: 1rem;
+  //     padding: 0.3rem;
+  //   }
+  // }
+
+  footer {
+    margin: 1.5rem;
+    .footer-heading {
+      font-size: 2rem;
     }
   }
 }
