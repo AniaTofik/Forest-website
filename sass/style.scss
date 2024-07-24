@@ -25,11 +25,18 @@ body {
     font-size: 1rem;
   }
 }
+.navbar-nav {
+  .nav-link:hover {
+    background-color: black;
+    color: white;
+  }
+}
 
 // header
 header.hero-img {
   position: relative;
   height: 30vh;
+  max-width: 1400px;
   background-image: url("../img/header\ jungle_640.jpg");
   background-size: cover;
   background-position: center;
@@ -55,7 +62,7 @@ header.hero-img {
     height: 30vh;
     color: rgb(238, 241, 242);
     .text-one {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
     .text-two {
       font-size: 1rem;
@@ -64,6 +71,13 @@ header.hero-img {
   }
 }
 // about-us
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+}
+
 .about-us-content {
   display: flex;
   justify-content: center;
@@ -106,6 +120,7 @@ header.hero-img {
     border: 2px solid white;
   }
 }
+
 // offers
 
 .offers {
@@ -213,6 +228,24 @@ footer {
       font-size: 1.4rem;
     }
   }
+  .offers {
+    .card-title {
+      padding: 0.8rem;
+      font-size: 1.8rem;
+    }
+    .card-price {
+      font-size: 2rem;
+    }
+    .offers-title-text p {
+      font-size: 1rem;
+    }
+    .offers-cards ul li {
+      font-size: 0.9rem;
+    }
+    .btn {
+      font-size: 1.2rem;
+    }
+  }
 }
 @media (min-width: 768px) {
   .navbar {
@@ -236,7 +269,6 @@ footer {
   }
 
   .about-us-content {
-    padding: 1rem;
     .about-us-text {
       .title {
         font-size: 1.6rem;
@@ -276,6 +308,102 @@ footer {
     .btn {
       font-size: 1.4rem;
       margin-top: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    .navbar-brand {
+      font-size: 3rem;
+    }
+    .navbar-collapse .navbar-nav a {
+      font-size: 1.8rem;
+      padding: 1rem;
+    }
+  }
+
+  header.hero-img {
+    background-image: url("../img/header\ jungle_1920.jpg");
+
+    .hero-text {
+      .text-one {
+        font-size: 2.2rem;
+      }
+      .text-two {
+        font-size: 2.6rem;
+      }
+    }
+  }
+  .about-us {
+    h1 {
+      padding: 40px;
+      font-size: 3rem;
+    }
+  }
+  .about-us-content {
+    .about-us-text {
+      .title {
+        font-size: 2.4rem;
+      }
+      .text {
+        font-size: 1.6rem;
+      }
+    }
+    .about-us-img {
+      height: 35vh;
+    }
+  }
+
+  .about-us-header {
+    margin-top: 3.5rem;
+    background-image: url(../img/girl-_1920.jpg);
+    .about-us-header-text {
+      font-size: 2rem;
+    }
+  }
+
+  .offers {
+    h1 {
+      padding: 40px;
+      font-size: 3rem;
+    }
+    .card-title {
+      padding: 1rem;
+      font-size: 2.4rem;
+    }
+    .card-price {
+      font-size: 2.6rem;
+    }
+    .offers-title-text p {
+      font-size: 1.6rem;
+    }
+    .offers-cards ul li {
+      font-size: 1.2rem;
+    }
+    .btn {
+      font-size: 1.6rem;
+      padding: 1rem 4rem;
+    }
+  }
+  footer {
+    .footer-heading {
+      font-size: 2rem;
+      padding-right: 1rem;
+    }
+    .footer-about-us-text {
+      .footer-text-title {
+        font-size: 1.6rem;
+      }
+      .footer-text {
+        font-size: 1.2rem;
+        padding: 0.1rem;
+      }
+    }
+
+    .footer-text {
+      font-size: 1.2rem;
+      padding: 0.6rem;
     }
   }
 }
