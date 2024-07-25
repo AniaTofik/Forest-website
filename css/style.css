@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  scroll-padding-top: 98px;
+}
+
 body {
   font-size: 60.75%;
   font-family: "Montserrat", sans-serif;
@@ -22,6 +26,8 @@ body {
 
 .navbar-nav .nav-link {
   font-size: 1rem;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .navbar-nav .nav-link:hover {
@@ -133,6 +139,10 @@ header.hero-img .hero-text .text-two {
   border: 2px solid white;
 }
 
+.offers .card {
+  width: 18rem;
+  min-height: 20rem;
+}
 .offers .card-title {
   padding: 0.8rem;
   font-size: 1.4rem;
@@ -297,6 +307,7 @@ footer .footer-text {
   }
   header.hero-img {
     background-image: url("../img/header jungle_1920.jpg");
+    height: 40vh;
   }
   header.hero-img .hero-text .text-one {
     font-size: 2.2rem;

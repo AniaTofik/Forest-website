@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+html {
+  scroll-padding-top: 98px;
+}
+
 body {
   font-size: 60.75%;
   font-family: "Montserrat", sans-serif;
@@ -23,6 +27,7 @@ body {
 .navbar-nav {
   .nav-link {
     font-size: 1rem;
+    transition: color 0.5s;
   }
 }
 .navbar-nav {
@@ -124,6 +129,10 @@ header.hero-img {
 // offers
 
 .offers {
+  .card {
+    width: 18rem;
+    min-height: 20rem;
+  }
   .card-title {
     padding: 0.8rem;
     font-size: 1.4rem;
@@ -325,6 +334,7 @@ footer {
 
   header.hero-img {
     background-image: url("../img/header\ jungle_1920.jpg");
+    height: 40vh;
 
     .hero-text {
       .text-one {
